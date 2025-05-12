@@ -1,0 +1,28 @@
+/* src/components/common/Button.css */
+.common-button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #eee;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.common-button:hover:not(:disabled) {
+    background-color: #ddd;
+}
+
+.common-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Клас для кнопок тільки з іконками */
+.icon-button {
+    padding: 8px;
+    line-height: 0;
+}
